@@ -1,0 +1,16 @@
+name: Freqtrade
+version: 0.1.0
+slug: freqtrade
+description: Freqtrade is a free and open source crypto trading bot written in Python
+url: https://github.com/TECH7Fox/freqtrade-hass-addons
+#image: "ghcr.io/tech7fox/{arch}-addon-freqtrade"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+map:
+  - config:rw
+host_network: true
+init: false

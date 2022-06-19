@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Freqtrade Add-on
+url: "https://github.com/TECH7Fox/freqtrade-hass-addons"
+maintainer: Jordy Kuhne <jordy.kuhne@gmail.com>

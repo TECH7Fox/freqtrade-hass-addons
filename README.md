@@ -1,2 +1,3 @@
 # freqtrade-hass-addons
- A Freqtrade add-on for Home Assistant.
+
+A Freqtrade add-on for Home Assistant.
