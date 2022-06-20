@@ -5,6 +5,10 @@ FROM $BUILD_FROM AS base
 
 # Install dependecies
 RUN apt-get update && apt-get install -y \
+    sudo \
+    libatlas3-base \
+    sqlite3 \
+    libhdf5-serial-dev \
     python3-pip \
     python3-venv \
     python3-dev \
@@ -16,5 +20,7 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/freqtrade/freqtrade.git && \
     cd freqtrade && \
     git checkout stable
+
+RUN freqtrade/setup.sh -i
 
 COPY rootfs /
