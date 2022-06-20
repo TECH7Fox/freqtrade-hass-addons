@@ -17,10 +17,10 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/freqtrade/freqtrade.git && \
-    cd freqtrade && \
-    git checkout stable
+RUN git clone https://github.com/freqtrade/freqtrade.git
 
-RUN freqtrade/setup.sh -i
+WORKDIR /freqtrade
+
+RUN git checkout stable && ./setup.sh -i
 
 COPY rootfs /
